@@ -1,7 +1,27 @@
+* {
+    font-family: 'open-sans';
+}
+
 .navbar-brand img#brand-logo {
     width: 80px;
 }
-
 #container {
     margin-top: 70px;
+    margin-bottom: 2px;
+}
+
+/* Profile */
+img.img-circle {
+    width: 120px;
+    border-radius: 50%;
+}
+#information-about {
+    border-radius: 20px;
+}
+#education {
+    text-align: center !important;
+}
+#formal-education-card .col-3 {
+    display: inline-block;
+    float:none;
 }
