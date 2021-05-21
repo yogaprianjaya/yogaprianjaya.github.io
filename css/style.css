@@ -18,10 +18,29 @@ img.img-circle {
 #information-about {
     border-radius: 20px;
 }
-#education {
-    text-align: center !important;
+@media screen and (max-width: 600px) {
+    #information-about {
+        width: 90%;
+        margin: auto;
+    }
 }
-#formal-education-card .col-3 {
+#info-education {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#info-education div{
+    display: inline-block;
+}
+.square {
+    border: blanchedalmond 1px solid;
+    width: 15px;
+    height: 15px;
+}
+.label-info-education{
+    line-height: 15px;
+}
+#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3 {
     display: inline-block;
     float:none;
+    margin: 0 auto 20px;
 }
