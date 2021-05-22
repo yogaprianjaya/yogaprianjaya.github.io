@@ -1,7 +1,48 @@
+* {
+    font-family: 'open-sans';
+}
+
 .navbar-brand img#brand-logo {
     width: 80px;
 }
-
 #container {
     margin-top: 70px;
+    margin-bottom: 2px;
+}
+
+/* Profile */
+img.img-circle {
+    width: 120px;
+    border-radius: 50%;
+}
+#information-about {
+    border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+    #information-about {
+        width: 90%;
+        margin: auto;
+    }
+}
+#info-education {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#info-education div{
+    display: inline-block;
+}
+.square {
+    border: blanchedalmond 1px solid;
+    width: 15px;
+    height: 15px;
+}
+.label-info-education{
+    line-height: 15px;
+}
+#experience-card {
+    margin-top: 20px;
+}
+#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3, #experience-card .col-sm-3 {
+    display: inline-block;
+    margin: 0 auto 20px;
 }
