@@ -38,9 +38,9 @@ img.img-circle {
 }
 .label-info-education{
     line-height: 15px;
+
 }
 #formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3 {
     display: inline-block;
-    float:none;
     margin: 0 auto 20px;
 }

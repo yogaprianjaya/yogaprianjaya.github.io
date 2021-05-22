@@ -38,6 +38,12 @@ const nonFormalEducation = [
   },
   {
     "id": 2,
+    "head": "DTI - PT Telkom Indonesia",
+    "title": "Front-End Developer",
+    "year": "September - 2020 sampai Januari - 2021"
+  },
+  {
+    "id": 3,
     "head": "Dicoding",
     "title": "Belajar Membuat Front-End Web untuk pemula",
     "year": "Mei - 2021"
