@@ -38,9 +38,11 @@ img.img-circle {
 }
 .label-info-education{
     line-height: 15px;
-
 }
-#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3 {
+#experience-card {
+    margin-top: 20px;
+}
+#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3, #experience-card .col-sm-3 {
     display: inline-block;
     margin: 0 auto 20px;
 }

@@ -54,26 +54,36 @@ const experience = [
     {
       "id": 1,
       "head": "Himpunan Mahasiswa",
+      "title": "Staff Departeen Ahli",
       "year": "2019",
-      "description": "Mengikuti Himpunan Mahasiswa D3 Teknologi Komputer selama 1 Periode sebagai salah satu staff di departemen ahli. Departemen ini bertugas untuk membantu mendorong kemampuan semua mahasiswa KeMa D3 Teknologi Komputer"
+      "description": "Mengikuti HiMa D3 Teknologi Komputer selama 1 Periode sebagai salah satu staff di departemen ahli"
     },
     {
       "id": 2,
       "head": "Asisten Praktikum",
       "title": "Algoritma & Pemrograman Dasar",
       "year": "2019",
-      "description": "Menjadi "
+      "description": "Menjadi asisten praktikum untuk mata kuliah Algoritma & Pemrograman Dasar selama 1 semester"
     },
     {
       "id": 3,
-      "head": "bebas",
-      "year": "2019 - 2020",
-      "description": ""
+      "head": "Asisten Praktikum",
+      "title": "Sistem Komputer",
+      "year": "2019",
+      "description": "Menjadi asisten praktikum untuk mata kuliah Sistem Komputer selama 1 semester"
     },
     {
       "id": 4,
-      "head": "bebas",
-      "year": "2019 - 2020",
-      "description": ""
+      "head": "Asisten Praktikum",
+      "title": "Algoritma & Pemrograman Lanjut",
+      "year": "2020",
+      "description": "Menjadi asisten praktikum untuk mata kuliah Algoritma & Pemrograman Lanjut selama 1 semester"
     },
+    {
+      "id": 5,
+      "head": "Koordinator Asisten Praktikum",
+      "title": "Sistem Jaringan Komputer",
+      "year": "2020",
+      "description": "Menjadi koordinator asisten praktikum untuk mata kuliah Sistem Jaringan Komputer selama 1 semester"
+    }
 ]
