@@ -1,5 +1,5 @@
-* {
-    font-family: 'open-sans';
+body {
+    font-family: 'Open-Sans';
 }
 
 .navbar-brand img#brand-logo {
@@ -11,6 +11,9 @@
 }
 .card-img-top {
     width: 100%;
+}
+#btn-to-portofolio {
+    margin: 0 auto;
 }
 
 /* Profile */
@@ -45,7 +48,12 @@ img.img-circle {
 #experience-card {
     margin-top: 20px;
 }
-#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3, #experience-card .col-sm-3 {
+#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3, #experience-card .col-sm-3, #project-card .col-sm-4 {
     display: inline-block;
     margin: 0 auto 20px;
+}
+
+.carousel-custom-bg {
+    background-color: rgba(29, 20, 20, 0.3);
+    border-radius: 30px;
 }
