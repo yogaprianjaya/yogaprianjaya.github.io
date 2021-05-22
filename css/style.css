@@ -9,6 +9,9 @@
     margin-top: 70px;
     margin-bottom: 2px;
 }
+.card-img-top {
+    width: 100%;
+}
 
 /* Profile */
 img.img-circle {
