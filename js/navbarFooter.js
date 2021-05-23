@@ -47,6 +47,6 @@ $(document).ready(function (){
 
     // copyright footer
     const copyrightFooter = document.querySelector('.copyright-footer');
-    const copyrightHref = '#';
-    copyrightFooter.innerHTML = '© 2021 Copyright: <a class="text-white" href="' + copyrightHref + '">Yoga Prianjaya</a>';
+    const copyrightHref = 'https://www.instagram.com/yoga_prianjaya/';
+    copyrightFooter.innerHTML = '© 2021 Copyright: <a class="text-white" href="' + copyrightHref + '" target="blank">Yoga Prianjaya</a>';
 })
