@@ -1,24 +1,17 @@
 const carousel = [
     {
         'id': 0,
-        'image': '/asset/img/carousel/carousel-hris.jpg',
-        'alt': 'carousel-hris',
-        'title': 'Aplikasi HRIS',
-        'description': 'Human Resource Information System'
+        'image': '/asset/img/carousel/carousel-profile.jpg',
+        'alt': 'carousel-profile',
+        'title': 'Yoga Prianjaya',
+        'description': 'Berbagi Pengalaman dan Ide Program'
     },
     {
         'id': 1,
-        'image': '/asset/img/carousel/carousel-dummy.jpg',
-        'alt': 'profile',
-        'title': 'title',
-        'description': 'descrtiption lorem lorem'
-    },
-    {
-        'id': 2,
-        'image': '/asset/img/carousel/carousel-dummy.jpg',
-        'alt': 'profile',
-        'title': 'title',
-        'description': 'descrtiption lorem lorem'
+        'image': '/asset/img/carousel/carousel-code.jpg',
+        'alt': 'carousel-code',
+        'title': 'Code Program',
+        'description': 'Coding dengan menggunakan aplikasi Visual Studio'
     }
 ];
 const cardPortofolio = [
