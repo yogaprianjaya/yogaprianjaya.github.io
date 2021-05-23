@@ -26,14 +26,15 @@ $(document).ready(function (){
     // sosial media footer
     const sosialMediaInfo = document.querySelector('.sosial-media-info');
     const sosialMediaItem = [
-        {'link': '#', 'icon': 'fa fa-instagram'},
-        {'link': '#', 'icon': 'fa fa-github'},
+        {'link': 'https://www.instagram.com/yoga_prianjaya/', 'icon': 'fa fa-instagram'},
+        {'link': 'https://github.com/yogaprianjaya', 'icon': 'fa fa-github'},
         {'link': '#', 'icon': 'fa fa-youtube'}
     ]
     sosialMediaItem.map(data => {
         const hrefSosialMediaItem = document.createElement('a');
         hrefSosialMediaItem.setAttribute('class', 'btn btn-outline-light btn-floating m-1');
         hrefSosialMediaItem.setAttribute('href', data.link);
+        hrefSosialMediaItem.setAttribute('target', 'blank');
         hrefSosialMediaItem.setAttribute('role', 'button');
         hrefSosialMediaItem.innerHTML = '<i class="' + data.icon + '"></i>'
         sosialMediaInfo.appendChild(hrefSosialMediaItem);
