@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-12 text-center" id="profile">
                         <img src="/asset/img/profile_square.png" class="rounded mx-auto d-block rounded-circle profile-picture">
                         <h1>Yoga Prianjaya</h1>
@@ -45,16 +45,40 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 mt-5 text-center" id="sertifikat">
+                <div id="hr" class="d-flex justify-content-center">
+                    <hr noshade width="30%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="2%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="5%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="2%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="30%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-12 text-center" id="sertifikat">
                         <h2>Sertifikat Keahlian</h2>
                         <p class="px-5">
                             Berikut merupakan daftar sertifikat keahlian yang sudah saya dapatkan.
                         </p>
-                        <button id="dti" class="btn btn-primary modal-sertfikat">DTI - Telkom Corporate</button>
-                        <button id="dicoding" class="btn btn-primary modal-sertfikat">Dicoding</button>
-                        <button id="dts" class="btn btn-primary modal-sertfikat">DTS - Kominfo</button>
+                        <div class="sertifikat-btn"></div>
                     </div>
+                </div>
+
+                <div id="hr" class="d-flex justify-content-center">
+                    <hr noshade width="30%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="2%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="5%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="2%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                    <hr noshade width="30%" class="mx-1" style="height: 5px; border-radius: 5px;">
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-12 text-center" id="portofolio">
+                        <h2>Aplikasi Yang Pernah Dibuat</h2>
+                        <p class="px-5">
+                            Berikut merupakan daftar aplikasi yang sudah pernah saya buat, baik aplikasi yang dibuat secara team (Pekerjaan dari perusahaan maupun organisasi belajar) ataupun yang saya buat sendiri.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center portofolio-aplikasi"></div>
                 </div>
             </div>
         </div>
@@ -78,17 +102,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p id="modal-sertifikat-penyelenggara" class="text-center">Test</p>
-                        <table class="table table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <td class="text-center" width="1%">No</td>
-                                    <td class="text-center" width="55%">Kelas</td>
-                                    <td class="text-center" width="44%">Periode</td>
-                                </tr>
-                            </thead>
-                            <tbody id="modal-sertifikat-data"></tbody>
-                        </table>
+                        <h5 id="modal-sertifikat-penyelenggara" class="text-center"></h5>
+                        <p id="modal-sertifikat-periode" class="text-center"></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -101,5 +116,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
         <script src="/js/sertifikat.js"></script>
+        <script src="/js/portofolio.js"></script>
     </body>
 </html>

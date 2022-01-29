@@ -1,70 +1,44 @@
-const data_dti = {
-    'judul': 'Digital Talent Incubator',
-    'penyelenggara': 'Telkom Corporate',
-    'data': [
-        {
-            'class': 'Front-End Develover',
-            'periode': 'September 2020 s/d Januari 2021'
-        }
-    ]
-};
+const sertifikat = [
+    {
+        'kelas': 'Front-End Develover',
+        'judul': 'Digital Talent Incubator',
+        'penyelenggara': 'Telkom Corporate',
+        'periode': 'September 2020 s/d Januari 2021'
+    },{
+        'kelas': 'Belajar Dasar Pemrograman Web',
+        'judul': 'Dicoding',
+        'penyelenggara': 'Dicoding Indonesia',
+        'periode': 'Agustus 2020'
+    },{
+        'kelas': 'Belajar Membuat Front-End Web Untuk Pemula',
+        'judul': 'Dicoding',
+        'penyelenggara': 'Dicoding Indonesia',
+        'periode': 'Mei 2021'
+    },{
+        'kelas': 'Junior web Develover',
+        'judul': 'Digital Talent Scholarship',
+        'penyelenggara': 'Kominfo',
+        'periode': 'Oktober 2021'
+    }
+];
 
-const data_dicoding = {
-    'judul': 'Dicoding',
-    'penyelenggara': 'Dicoding Indonesia',
-    'data': [
-        {
-            'class': 'Belajar Dasar Pemrograman Web',
-            'periode': 'Agustus 2020'
-        },
-        {
-            'class': 'Belajar Membuat Front-End Web Untuk Pemula',
-            'periode': 'Mei 2021'
-        }
-    ]
-};
+sertifikat.map((item, index) => {
+    const code = `
+        <button id="sertifikat-${index}" class="btn btn-primary modal-sertfikat" data-judul="${item.judul}" data-penyelenggara="${item.penyelenggara}" data-periode="${item.periode}" data-kelas="${item.kelas}">${item.kelas}</button>
+    `;
 
-const data_dts = {
-    'judul': 'Digital Talent Scholarship',
-    'penyelenggara': 'Kominfo',
-    'data': [
-        {
-            'class': 'Junior web Develover',
-            'periode': 'Oktober 2021'
-        }
-    ]
-};
-
-$('#dti').data('judul', data_dti.judul);
-$('#dti').data('penyelenggara', data_dti.penyelenggara);
-$('#dti').data('data', data_dti.data);
-
-$('#dicoding').data('judul', data_dicoding.judul);
-$('#dicoding').data('penyelenggara', data_dicoding.penyelenggara);
-$('#dicoding').data('data', data_dicoding.data);
-
-$('#dts').data('judul', data_dts.judul);
-$('#dts').data('penyelenggara', data_dts.penyelenggara);
-$('#dts').data('data', data_dts.data);
+    $('.sertifikat-btn').append(code);
+});
 
 $('.modal-sertfikat').click(function() {
     const judul = $(this).data('judul');
     const penyelenggara = $(this).data('penyelenggara');
-    const data = $(this).data('data');
+    const kelas = $(this).data('kelas');
+    const periode = $(this).data('periode');
 
-    $('#modal-sertifikat-title').text(judul);
+    $('#modal-sertifikat-title').text(kelas + ' (' + judul + ')');
     $('#modal-sertifikat-penyelenggara').text('Penyelenggara : ' + penyelenggara);
-    $('#modal-sertifikat-data').text('');
-    data.map((item, index) => {
-        const code = `
-            <tr>
-                <td>${index + 1}</td>
-                <td>${item.class}</td>
-                <td>${item.periode}</td>
-            </tr>
-        `;
-        $('#modal-sertifikat-data').append(code);
-    });
+    $('#modal-sertifikat-periode').text(periode);
 
     $('#modal-sertifikat').modal('show');
 });
