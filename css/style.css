@@ -1,59 +1,24 @@
 body {
+    box-sizing: border-box;
+    overflow-x: hidden;
     font-family: 'Open-Sans';
 }
 
-.navbar-brand img#brand-logo {
-    width: 80px;
+#profile {
+    margin-top: -100px;
 }
-#container {
-    margin-top: 70px;
-    margin-bottom: 2px;
+#profile .profile-picture {
+    width: 200px;
+    border: 8px white solid;
 }
-.card-img-top {
-    width: 100%;
-}
-#btn-to-portofolio {
-    margin: 0 auto;
+#profile .sosial-media {
+    width: 40px;
 }
 
-/* Profile */
-img.img-circle {
-    width: 120px;
-    border-radius: 50%;
-}
-#information-about {
-    border-radius: 20px;
-}
-@media screen and (max-width: 600px) {
-    #information-about {
-        width: 90%;
-        margin: auto;
-    }
-}
-#info-education {
-    text-align: center;
-    margin-bottom: 10px;
-}
-#info-education div{
-    display: inline-block;
-}
-.square {
-    border: blanchedalmond 1px solid;
-    width: 15px;
-    height: 15px;
-}
-.label-info-education{
-    line-height: 15px;
-}
-#experience-card {
-    margin-top: 20px;
-}
-#formal-education-card .col-sm-3, #non-formal-education-card .col-sm-3, #experience-card .col-sm-3, #project-card .col-sm-4 {
-    display: inline-block;
-    margin: 0 auto 20px;
+.copy-right {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.carousel-custom-bg {
-    background-color: rgba(29, 20, 20, 0.3);
-    border-radius: 30px;
+#modal-sertifikat-data tr td {
+    font-size: 12px;
 }
