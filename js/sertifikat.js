@@ -3,42 +3,55 @@ const sertifikat = [
         'kelas': 'Front-End Develover',
         'judul': 'Digital Talent Incubator',
         'penyelenggara': 'Telkom Corporate',
-        'periode': 'September 2020 s/d Januari 2021'
+        'periode': 'September 2020 s/d Januari 2021',
+        'picture': 'dti-front-end-developer.png'
     },{
         'kelas': 'Belajar Dasar Pemrograman Web',
         'judul': 'Dicoding',
         'penyelenggara': 'Dicoding Indonesia',
-        'periode': 'Agustus 2020'
+        'periode': 'Agustus 2020',
+        'picture': 'dicoding-belajar-dasar-pemrogreman-web.png'
     },{
         'kelas': 'Belajar Membuat Front-End Web Untuk Pemula',
         'judul': 'Dicoding',
         'penyelenggara': 'Dicoding Indonesia',
-        'periode': 'Mei 2021'
+        'periode': 'Mei 2021',
+        'picture': 'dicoding-belajar-membuat-front-end.png'
     },{
         'kelas': 'Junior web Develover',
         'judul': 'Digital Talent Scholarship',
         'penyelenggara': 'Kominfo',
-        'periode': 'Oktober 2021'
+        'periode': 'Oktober 2021',
+        'picture': null
     }
 ];
 
 sertifikat.map((item, index) => {
     const code = `
-        <button id="sertifikat-${index}" class="btn btn-primary modal-sertfikat" data-judul="${item.judul}" data-penyelenggara="${item.penyelenggara}" data-periode="${item.periode}" data-kelas="${item.kelas}">${item.kelas}</button>
+        <button class="btn btn-primary modal-sertfikat my-1" data-index="${index}">${item.kelas}</button>
     `;
 
     $('.sertifikat-btn').append(code);
 });
 
 $('.modal-sertfikat').click(function() {
-    const judul = $(this).data('judul');
-    const penyelenggara = $(this).data('penyelenggara');
-    const kelas = $(this).data('kelas');
-    const periode = $(this).data('periode');
+    const data = sertifikat[$(this).data('index')];
 
-    $('#modal-sertifikat-title').text(kelas + ' (' + judul + ')');
-    $('#modal-sertifikat-penyelenggara').text('Penyelenggara : ' + penyelenggara);
-    $('#modal-sertifikat-periode').text(periode);
+    $('.modal-sertifikat-picture').text('');
+    if(data.picture != null) {
+        const code = `
+            <img src="/asset/img/sertifikat/${data.picture}" class="img-fluid" alt="${data.judul}">
+            <div style="height: 100%; width: 100%; background-color: rgba(83, 83, 83, 0.1); z-index: 100; position: absolute; top: 0">
+                <div class="position-absolute top-50 start-50 translate-middle text-white" style="font-size: 30px; font-weight: bold;">Yoga Prianjaya</div>
+            </div>
+        `;
+
+        $('.modal-sertifikat-picture').append(code);
+    }
+
+    $('#modal-sertifikat-title').text(data.kelas + ' (' + data.judul + ')');
+    $('#modal-sertifikat-penyelenggara').text('Penyelenggara : ' + data.penyelenggara);
+    $('#modal-sertifikat-periode').text(data.periode);
 
     $('#modal-sertifikat').modal('show');
 });
