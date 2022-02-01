@@ -4,7 +4,7 @@ const portofolio = [
         'image': 'manic.png',
         'paragraph': 'Aplikasi yang dibuat untuk membantu kegiatan perpustakaan di MAN IC Kendari.',
         'detail': {
-            'paragraph': '',
+            'paragraph': `<p>Aplikasi E-Library MAN IC Kendari ini merupakan sebuah aplikasi yang dipersiapkan untuk membantu kegiatan perpustakaan di MAN IC Kendari. Aplikasi ini terdiri dari beberapa menu utama yaitu :</p><ol><li>konten</li><p>Menu konten merupakaan menu yang dibuat untuk mengatur seluruh konten yang ada di aplikasi, seperti konten berita, youtube, data pada footer, dan lain sebagainya.</p><li>Management User</li><p>Menu Management User merupakan menu yang dibuat untuk mengatur seluruh akun pengguna yang terdaftar dari database, baik perubahan data, penghapusan data, maupun penambahan akun pengguna secara manual.</p><li>Buku Tamu</li><p>Menu Buku Tamu merupakan menu yang berfungsi untuk menampung saran ataupun masukkan dari tamu yang mengunjungi aplikasi ini.</p><li>Perpustakaan</li><p>Menu Perpustakaan merupakan menu utama pada aplikasi ini, pada menu ini terdapat sub-menu seperti karya tulis, artikel, hadist dan lain sebagainya. Sub-menu ini menyimpan semua koleksi dari perpustakaan MAN IC Kendari.</p></ol><p>Aplikasi ini mempunyai 4 role utama yaitu Admin, Editor, Siswa, dan Guru. Siswa dan Guru dapat mengupload hasil karya tulis mereka pada aplikasi ini. Kemudian karya tulis tersebut akan di review oleh Editor atau Admin, dan hanya dapat di publikasi oleh role tersebut.</p><p>Untuk melakukan login pada aplikasi ini, akun yang terdaftar harus sudah terverifikasi terlebih dahulu dengan cara memasukkan kode verifikasi yang telah dikirim melalui email oleh sistem.</p>`,
             'periode': 'Desember 2021 - Januari 2022',
             'framework': ['Laravel', 'Bootstrap'],
             'people': 'Team PT. Kreasi Rekayasa Indonesia'
@@ -48,7 +48,10 @@ $('.modal-portofolio').click(function() {
             <span class="badge bg-primary">${item}</span>
         `;
         $('#modal-portofolio-framework').append(code);
-    })
+    });
+
+    $('#modal-portofolio-detail').text('');
+    $('#modal-portofolio-detail').append(data.detail.paragraph);
 
     $('#modal-portofolio').modal('show');
 });
