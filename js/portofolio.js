@@ -14,8 +14,8 @@ const portofolio = [
 
 portofolio.map((item, index) => {
     const code = `
-        <div class="col-3 mx-1">
-            <div class="card h-100" style="width: 18rem;">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card h-100">
                 <img src="/asset/img/project/${item.image}" class="card-img-top" alt="${item.name}">
                 <div class="card-body text-center">
                     <h5 class="card-title">${item.name}</h5>

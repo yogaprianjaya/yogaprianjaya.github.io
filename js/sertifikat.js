@@ -41,9 +41,7 @@ $('.modal-sertfikat').click(function() {
     if(data.picture != null) {
         const code = `
             <img src="/asset/img/sertifikat/${data.picture}" class="img-fluid" alt="${data.judul}">
-            <div style="height: 100%; width: 100%; background-color: rgba(83, 83, 83, 0.1); z-index: 100; position: absolute; top: 0">
-                <div class="position-absolute top-50 start-50 translate-middle text-white" style="font-size: 30px; font-weight: bold;">Yoga Prianjaya</div>
-            </div>
+            <div style="height: 100%; width: 100%; background-color: rgba(83, 83, 83, 0.1); z-index: 100; position: absolute; top: 0"></div>
         `;
 
         $('.modal-sertifikat-picture').append(code);

@@ -1,7 +1,10 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
+    overflow-y: auto !important;
     font-family: 'Open-Sans';
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 #profile {
@@ -21,4 +24,17 @@ body {
 
 #modal-sertifikat-data tr td {
     font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    #profile {
+        margin-top: -50px;
+    }
+    #profile .profile-picture {
+        width: 100px;
+        border: 4px white solid;
+    }
+    #profile .sosial-media {
+        width: 25px;
+    }
 }
